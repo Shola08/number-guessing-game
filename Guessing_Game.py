@@ -2,6 +2,7 @@ import random
 
 secretNumber = random.randint(1,100)
 attempts = 0
+print('Can you guess correctly in 10 tries or less?')
 print("Press enter to begin")
 input('')
 print("I'm thinking of a number between 1 and 100.")
@@ -33,9 +34,9 @@ while True :#validGuess != secretNumber:
             # The above code is the same as 'print("Correct! You guessed it in %d tries." %attempts )'
             # It makes use of the 'f-string' 
             break
-if attempts <5  :
+if attempts <=5  :
     print("Amazing!!")
-elif attempts >5 <=10 :
+elif attempts >5 and attempts <=10 :
     print("Well done.")
 else:
     print("Better luck next time")
